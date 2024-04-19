@@ -56,7 +56,7 @@ public class Tests {
         $(loginSelector).setValue(blockedUser.getLogin());
         $(passwordSelector).setValue(blockedUser.getPassword());
         $(buttonSelector).click();
-        $(errorMsgSelector).shouldBe(visible).shouldHave(text(errorMsg));
+        $(errorMsgSelector).shouldBe(visible).shouldHave(text("Ошибка! Пользователь заблокирован"));
     }
 
     @Test
